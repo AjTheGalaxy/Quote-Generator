@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Playfair+Display:ital,wght@1,600&family=Victor+Mono&display=swap');
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    
+    font-family: 'Victor Mono', monospace; 
+}
+body{
+    background-color:bisque;
+}
+
+.quote-box{
+    background-color: rgb(7, 6, 6);
+    color: cyan;
+    width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px 0 cyan;
+}
+
+.quote-box h2{
+    font-size: 32px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.quote-box h2::after {
+    content: '';
+    width: 75px;
+    height: 3px;
+    border-radius: 3px;
+    background: red;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%) ;
+}
+
+.quote-box blockquote{
+    font-size: 26px;
+    min-height: 110px;
+    font-family: 'Playfair Display';
+
+}
+
+.quote-box blockquote::before, .quote-box blockquote::after{
+    content:'"' ;
+
+}
+.quote-box span{
+    display: block;
+    font-family: 'Borel', cursive;
+    margin-top: 10px;
+    float: right;
+    position: relative;
+}
+.quote-box span::before{
+    content:"";
+    width: 20px;
+    height: 2px;
+    background: red;
+    position: absolute;
+    top: 50%;
+    left: -30px;
+}
+
+.quote-box div{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.quote-box button{
+    background-color:cyan;
+    color:black;
+    border-radius: 25px;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    cursor: pointer;
+    font-family: 'Playfair Display';
+}
+
+.quote-box button img{
+    width: 40px;
+    margin-right: 10px;
+}
+.quote-box button:nth-child(2){
+    background: white;
+    color: black;
+}
